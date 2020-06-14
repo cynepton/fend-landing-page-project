@@ -47,17 +47,23 @@ p {
 
 /* ---- Layout Rules ---- */
 main {
-    margin: 10vh 1em 10vh;
+    margin: 10vh 0/*em*/ 10vh;
 }
 
 .main-hero {
-    min-height: 40vh;
+    height: 80vh;
+    width: 100vw;
     padding-top: 3em;
+    background-color: rgb(212, 98, 22);
+    text-decoration: underline;
 }
 
 section {
+    /* display: flex; */
     position: relative;
-    min-height: 80vh;
+    min-height: 90vh;
+
+
 }
 
 
@@ -65,13 +71,24 @@ section {
 
 /* Navigation Styles*/
 .navbar__menu ul {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding-left: 0;
     margin: 0;
     text-align: right;
+    /* border: 2px solid black; */
 }
 
 .navbar__menu li {
     display: inline-block;
+    color: black;
+    font-size: 3.5vh;
+    width: 1fr;
+    padding: 0 3vw;
+    border: 2px solid rgb(218, 215, 215);
 }
 
 .navbar__menu .menu__link {
@@ -95,6 +112,8 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    min-height: 4vh;
+
 }
 
 /* Footer Styles */
@@ -114,6 +133,7 @@ section {
 .landing__container {
     padding: 1em;
     text-align: left;
+    min-height: 100vh;
 }
 
 @media only screen and (min-width: 35em){
