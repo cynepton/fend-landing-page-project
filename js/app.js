@@ -9,7 +9,7 @@
  * 
  * JS Version: ES2015/ES6
  * 
- * JS Standard: ESlint
+ *JS Standard: ESlint
  * 
 */
 
@@ -24,7 +24,6 @@
  * Start Helper Functions
  * 
 */
-
 
 
 /**
