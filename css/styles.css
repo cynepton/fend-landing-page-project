@@ -91,6 +91,10 @@ section {
     border: 2px solid rgb(218, 215, 215);
 }
 
+    .navbar__menu li:hover {
+        border: 5px solid green;
+    }
+
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
