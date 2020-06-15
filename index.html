@@ -18,11 +18,10 @@
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list">
-        <!-- <li> 1</li>
-        <li>2</li>
-        <li>3</li>
-         -->
-        <!-- Uncomment the above comment for a test view of the lsits Lists go here -->
+        <!-- <a href="#section1"><li>1</li></a>
+        <a href="#section2"><li>2</li></a>
+        <a href="#section3">l<li>3</li></a> -->
+        <!-- Uncomment the above comment for a test view of the lsits Lists.  -->
       </ul>
     </nav>
   </header>
@@ -36,8 +35,9 @@
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
 
-    <!-- Custom data-* attributes are used to define a section number for each section see https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* for more detail. every new section must have this data-nav attribute with a "Section-number" naming that follows the previous section.-->
+    <!-- Custom data-* attributes are used to define a section number for each section see https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* for more detail. every new section must have this data-nav attribute with a "Section-<number>" naming that follows the previous section.-->
     <!-- https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset for read/write operations with the data-nav attribute -->
+    <!-- all sections that need to be added to the navigation bar shown use the <section> tag.  -->
     
     <section id="section1" data-nav="Section-1" class="your-active-class">
       <div class="landing__container">
