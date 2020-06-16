@@ -56,7 +56,6 @@ for (let i = 0; i < secLength; i++) {
     addListItem(i+1);
 }
 
-
 // Add class 'active' to section when near top of viewport
 
 
@@ -74,5 +73,3 @@ for (let i = 0; i < secLength; i++) {
 // Scroll to section on link click
 
 // Set sections as active
-
-
