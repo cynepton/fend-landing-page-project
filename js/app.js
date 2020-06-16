@@ -17,23 +17,44 @@
  * Define Global Variables
  * 
 */
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+// Returns a nodelist of all sections
 const sections = document.querySelectorAll("section");
 
+// Number of sections
+const secLength = sections.length;
+
+// selects the navbar's unordered list tag within which the <li> tags would be placed 
+const listParent = document.querySelector("#navbar__list");
 
 /**
- * End Global Variables
- * Start Helper Functions
+ * Helper Functions
  * 
 */
 
 
 /**
- * End Helper Functions
- * Begin Main Functions
+ * Main Functions
  * 
 */
+function addListItem (iterator) {
+    const sectionAnchor = document.createElement('a');
+    const anchorLink = `#section${iterator}`;
+    sectionAnchor.setAttribute('href', anchorLink);
+
+    listParent.appendChild(sectionAnchor);
+    const listItem = document.createElement('li');
+    listItem.setAttribute('id', `item${iterator}`)
+    listItem.textContent = `${iterator}`;
+
+    sectionAnchor.appendChild(listItem);
+}
 
 // build the nav
+for (let i = 0; i < secLength; i++) {
+    addListItem(i+1);
+}
 
 
 // Add class 'active' to section when near top of viewport
