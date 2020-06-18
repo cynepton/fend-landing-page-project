@@ -51,19 +51,20 @@ function addListItem (iterator) {
     sectionAnchor.appendChild(listItem);
 }
 
-// This function creates an array of the sections and their distances from the top of the viewport
-function getTopDistance(element) {
+/**
+ * This function creates an array of the sections and their distances from the top of the viewport
+*/
+function getTopDistanceArray() {
     let topDistances = [];
-    let topDistance = element.getBoundingClientRect();
-    let distanceValue = topDistance.top;
-    topDistances.push(distanceValue);
+    sections.forEach(element => {
+        let distanceValue = element.getBoundingClientRect().top;
+        topDistances.push(distanceValue);
+    });
+    return topDistances;
 }
 
-// function getSectionInView(params) {
-//     sections.forEach(element => {
-        
-//     });   
-// }
+
+
 // build the nav
 for (let i = 0; i < secLength; i++) {
     addListItem(i+1);
@@ -72,8 +73,7 @@ for (let i = 0; i < secLength; i++) {
 /**
  * Event listeners
 */
-document.addEventListener('scroll', functionName()
-);
+document.addEventListener('scroll', getSectionInView());
 
 // Add class 'active' to section when near top of viewport
 
