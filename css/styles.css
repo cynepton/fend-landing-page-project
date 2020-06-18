@@ -67,7 +67,7 @@ main {
 section {
     /* display: flex; */
     position: relative;
-    min-height: 90vh;
+    min-height: 95vh;
 }
 
 
@@ -98,6 +98,10 @@ section {
     .navbar__menu li:hover {
         border: 5px solid green;
     }
+
+.activeNavItem {
+    background-color: lightsalmon;
+}
 
 .navbar__menu .menu__link {
     display: block;
