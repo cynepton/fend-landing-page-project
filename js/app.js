@@ -51,10 +51,29 @@ function addListItem (iterator) {
     sectionAnchor.appendChild(listItem);
 }
 
+// This function creates an array of the sections and their distances from the top of the viewport
+function getTopDistance(element) {
+    let topDistances = [];
+    let topDistance = element.getBoundingClientRect();
+    let distanceValue = topDistance.top;
+    topDistances.push(distanceValue);
+}
+
+// function getSectionInView(params) {
+//     sections.forEach(element => {
+        
+//     });   
+// }
 // build the nav
 for (let i = 0; i < secLength; i++) {
     addListItem(i+1);
 }
+
+/**
+ * Event listeners
+*/
+document.addEventListener('scroll', functionName()
+);
 
 // Add class 'active' to section when near top of viewport
 
@@ -62,11 +81,7 @@ for (let i = 0; i < secLength; i++) {
 // Scroll to anchor ID using scrollTO event
 
 
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
+
 
 // Build menu 
 
