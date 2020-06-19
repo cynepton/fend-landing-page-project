@@ -26,10 +26,10 @@ To improve the user experience, the section actively being viewed should be diff
 
 This may not sound like a lot, but there are a fair amount of moving pieces that rely on each other to work. You’ll need to plan out the logic of what you are trying to accomplish before you begin developing. If you find this process to be quick, there’s a list of additional functionality that you can add that all strive to improve the users’ experience.
 
-#### What will I learn?
-The landing page presents the first opportunity to fully combine your skills in HTML, CSS, and JavaScript into a large project. Aside from solidifying your skills with these three technologies, you’ll discover how best to combine them in a complex application.
+#### What will I learnt?
+The landing page presented my first opportunity to fully combine your skills in HTML, CSS, and JavaScript into a large project. Aside from solidifying my skills with these three technologies, I discovered how best to combine them in a complex application.
 
-The following are just some of the questions that you’ll experience along the way:
+The following are just some of the questions that I experienced along the way:
 - What’s the ideal workflow?
 - How many files do I need?
 - Do I modify the HTML first or the CSS?
